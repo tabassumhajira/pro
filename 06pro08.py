@@ -1,5 +1,6 @@
+import sys,string, math, itertools
 a = int(input())
-s = []
+S = []
 if a==2 :
     print('3')
     print('2 1 2')
@@ -10,10 +11,9 @@ if a==3 :
     sys.exit()
 k = a//2
 for i in range(2,a+1,2) :
-    s.append(i)
+    S.append(i)
 for i in range(1,a,2 ) :
-    s.append(i)
+    S.append(i)
 for i in range(2,a+1,2 ) :
-    s.append(i)
-print(len(s))
-print(*s)
+    S.append(i)
+print(len(S))
